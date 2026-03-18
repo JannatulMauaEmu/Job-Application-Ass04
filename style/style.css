@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+}
+
+.Tracker-wrapper{
+    background-color: #0d1b2e;
+    padding: 20px 24px 0 24px;
+    border-radius: 16px 16px 0 0;
+}
+
+.Tracker-tittle{
+    color: #4da6ff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.stats-row{
+    display: flex;
+    gap: 5;
+}
+.stat-card{
+    background: #ffffffff;
+    border-radius: 12px 12px 0 0;
+    padding: 16px 40px;
+    min-width: 500px;
+    border: 1px solid #e2e8f0;
+    border-bottom: none;
+    margin-right: 8px;
+}
+
+.stat-label{
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+.stat-value{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.stat-value .total{
+    color: #1e3a5f;
+}
+.stat-value .interview{
+    color: #16a34a;
+}
+.stat-value .rejected{
+    color: #ef4444;
+}
