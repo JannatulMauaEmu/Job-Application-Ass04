@@ -387,9 +387,23 @@
                 let btnInterview = card.querySelector(".btn-interview");
                 let btnRejected = card.querySelector(".btn-rejected");
                 let badge = card.querySelector(".status-badge");
-                
+
+                btnInterview.addEventListener("click",function()
+            {
+                if(badge.classList.contains("badge-interview"))
+            {
+                badge.textContent = "NOT APPLIED";
+                badge.className  = "status-badge";
+            }else
+            {
+                badge.textContent = "INTERVIEW";
+                badge.className = "status-badge badge-interview";
             }
-        )
+            updateStats();
+            applyFilter(document.querySelector(".filter-btn.active").dataset.filter);
+            });
+            }
+        );
         }
     </script>
 
