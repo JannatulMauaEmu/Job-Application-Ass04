@@ -54,6 +54,11 @@ body{
 .stat-value .rejected{
     color: #ef4444;
 }
+
+.wrapper{
+    max-width: 720px;
+    margin: 0 auto;
+}
 .card-list {
     display: flex;
     flex-direction: column;
@@ -62,6 +67,7 @@ body{
     padding: 4px 0;
     max-width: 720px;
     margin: 0 auto;
+    
 }
 .card{
     background: #ffffff;
@@ -69,8 +75,9 @@ body{
     padding: 20px  24px;
     width: 100%;
     max-width: 720px;
-    margin :0 auto;
     position: relative;
+    max-width: 720px;
+    margin: 0 auto;
 }
 .card-header{
     display: flex;
