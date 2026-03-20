@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f4f8;
+    background-color: #0b1d2e;
 }
 
 .Tracker-wrapper{
@@ -23,13 +23,13 @@ body{
 }
 .stats-row{
     display: flex;
-    gap: 5;
+    gap: 8px;
 }
 .stat-card{
     background: #ffffffff;
     border-radius: 12px 12px 0 0;
     padding: 16px 40px;
-    min-width: 500px;
+    min-width: 120px;
     border: 1px solid #e2e8f0;
     border-bottom: none;
     margin-right: 8px;
@@ -52,5 +52,90 @@ body{
     color: #16a34a;
 }
 .stat-value .rejected{
+    color: #ef4444;
+}
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #0d1b2e; 
+    padding: 4px 0;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.card{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px  24px;
+    width: 100%;
+    max-width: 720px;
+    margin :0 auto;
+    position: relative;
+}
+.card-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card-header h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1f2e;
+    margin-bottom: 2px;
+}
+.card-header h3{
+    font-size: 13px;
+    font-weight: 400;
+    color: #5a6478;
+}
+.meta{
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.meta span{
+    font-size: 12px;
+    color: #6b7280;
+}
+.status-badge{
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #16a34a;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 4px;
+    padding: 2px 8px;
+    letter-spacing: 0.05em;
+}
+.description{
+    margin-top: 12px;
+    font-size: 13px;
+    color: #4b5563;
+    line-height: 1.5;
+}
+.actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.btn{
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    background: transparent;
+    transition:background 0.15s;
+}
+.btn-interview{
+    border: 1.5px solid #16a34a;
+    color: #16a34a;
+}
+.btn-rejected{
+    border: 1.5px solid #ef4444;
     color: #ef4444;
 }
